@@ -86,7 +86,7 @@
                 position: absolute;
                 height: 100%;
                 width: 0%;
-                background: var(--primary);
+                background: #000;
                 opacity: 1;
                 top: 0;
                 left: 0;
@@ -228,6 +228,8 @@
         max-height: 30em;
     }
 
+    //! Hero & Background start
+
     #hero-title{
         color: white !important; 
         -webkit-text-stroke-width: 1px;
@@ -250,7 +252,7 @@
         position: relative;
         overflow: hidden;
         // padding-bottom: 56.25%; /* Aspect ratio for 16:9 */
-        background-color: #fee300;
+        background-color: var(--backgroundPrimary);
         min-height: 415px;
       }
       
@@ -1049,7 +1051,7 @@
         display: block;
         z-index: 6;
         border-top: 2px solid #030308;
-        background-color: #fee300;
+        background-color: var(--backgroundPrimary);
     }
     .water-wrapper{
         position: absolute;
@@ -1096,7 +1098,7 @@
         width: 77px;
         display: block;
         z-index: 6;
-        background-color: #fee300;
+        background-color: var(--backgroundPrimary);
     }
     .water.snd{
         left: 77px;
@@ -1635,7 +1637,7 @@
         width: 116px;
         display: block;
         z-index: 1;
-        background-color: #fee300;
+        background-color: var(--backgroundPrimary);
     }
     .water-big span:nth-child(2){
         left: -2px;
@@ -1869,6 +1871,7 @@
         transform: scale(0.80);
         z-index: 2;
     }
+    //! Hero & Background end
     
 
     }                           
