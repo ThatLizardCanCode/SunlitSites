@@ -8,11 +8,18 @@
 @media only screen and (min-width: 0rem) {
     // Website colors
 :root {
-    /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-    --primary: #36BA98;
-    --primaryLight: #F4A261;
-    --secondary: #FABC3F;
-    --secondaryLight: #c8750a;
+    /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. 
+    
+    #219C90
+    #FFF455
+    #FFC700
+    #EE4E4E
+
+    */
+    --primary: #219C90;
+    --primaryLight: #EE4E4E;
+    --secondary: #FFC700;
+    --secondaryLight: #FFF455;
     --headerColor: #1a1a1a;
     --headerColorLight: #ffffff;
     --bodyTextColor: #222222;
@@ -20,7 +27,7 @@
     --bodyTextColorWhite: #ffffff;
     --btnDark: #1a1a1a;
     --btnLight: #ffffff;
-    --backgroundPrimary: #36BA98;
+    --backgroundPrimary: #219C90;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
