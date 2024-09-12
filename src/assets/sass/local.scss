@@ -1,6 +1,7 @@
 /* PAGE-SPECIFIC STYLES FOR THE HOME PAGE */
 
-
+//            border: 1px solid #000000;
+// box-shadow: 10px 10px;
 
 /*-- -------------------------- -->
 <---            Hero            -->
@@ -60,48 +61,7 @@
             color: var(--bodyTextColor);
         }
 
-        .cs-button-solid {
-            font-size: calc(16 / 16 * 1rem);
-            /* 46px - 56px */
-            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-            text-decoration: none;
-            font-weight: 700;
-            text-align: center;
-            margin: auto;
-            color: #1a1a1a;
-            min-width: calc(150 / 16 * 1rem);
-            margin: 0;
-            padding: 0 calc(24 / 16 * 1rem);
-            background-color: var(--secondary);
-            border-radius: calc(4 / 16 * 1rem);
-            display: inline-block;
-            position: relative;
-            z-index: 1;
-            /* prevents padding from adding to the width */
-            box-sizing: border-box;
-            transition: color 0.3s;
-
-            &:before {
-                content: "";
-                position: absolute;
-                height: 100%;
-                width: 0%;
-                background: #000;
-                opacity: 1;
-                top: 0;
-                left: 0;
-                z-index: -1;
-                border-radius: calc(4 / 16 * 1rem);
-                transition: width 0.3s;
-            }
-
-            &:hover {
-                color: #fff;
-                &:before {
-                    width: 100%;
-                }
-            }
-        }
+      
 
         .cs-stats-group {
             max-width: calc(522 / 16 * 1rem);
@@ -230,7 +190,6 @@
 
 
 
-
     
     #hero-title{
         color: white !important; 
@@ -260,7 +219,7 @@
         background-color: var(--backgroundPrimary);
         min-height: 415px;
 
-
+        border-bottom: 2px solid #030308;
       }
       
     .section-center{
@@ -1976,7 +1935,7 @@
         .cs-flex-group {
             position: relative;
             border-radius: calc(16 / 16 * 1rem);
-            background-color: #f7f7f7;
+            background-color: var(--backgroundSecondary);
             /* 16px - 32px */
             padding: clamp(1rem, 3vw, 2rem);
         }
@@ -2095,7 +2054,7 @@
 @media only screen and (min-width: 0rem) {
     #services-1666 {
         padding: var(--sectionPadding);
-        background-color: #f7f7f7;
+        background-color: var(--backgroundSecondary);
         position: relative;
         overflow: hidden;
         z-index: 1;
@@ -2181,12 +2140,17 @@
             list-style: none;
             width: 100%;
             background-color: transparent;
-            border: 1px solid #e8e8e8;
+            border: 1px solid #000000;
+            box-shadow: 10px 10px;
             padding: 0;
             box-sizing: border-box;
             transition: border-bottom 0.3s;
 
+
             &.active {
+
+                
+                
                 .cs-indicator {
                     &:before {
                         transform: translate(-50%, -50%) rotate(360deg);
@@ -2311,40 +2275,8 @@
         }
 
         .cs-button-solid {
-            font-size: calc(16 / 16 * 1rem);
-            font-weight: 700;
-            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-            text-align: center;
-            text-decoration: none;
-            width: clamp(11.625rem, 23vw, 13.625rem);
-            /* 28px - 40px */
             margin: clamp(1.75rem, 3.9vw, 2.5rem) 0 0 0;
-            /* prevents padding from affecting height and width */
-            box-sizing: border-box;
-            padding: 0 calc(24 / 16 * 1rem);
-            color: #fff;
-            background-color: var(--primary);
-            display: inline-block;
-            position: relative;
-            z-index: 1;
-
-            &:before {
-                content: "";
-                width: 0%;
-                height: 100%;
-                background: #000;
-                opacity: 1;
-                /* add a border radius below this to round corners */
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: -1;
-                transition: width 0.3s;
-            }
-
-            &:hover:before {
-                width: 100%;
-            }
+                                            
         }
     }
 }
