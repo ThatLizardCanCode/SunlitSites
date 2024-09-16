@@ -48,6 +48,17 @@ body {
     box-sizing: border-box;
 }
 
+.a-btn{
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+
+    &:hover{
+        color: var(--backgroundPrimary);
+    }
+}
 
 .material-symbols-outlined {
   font-variation-settings:
