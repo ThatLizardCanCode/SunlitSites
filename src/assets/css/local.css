@@ -2482,6 +2482,7 @@
 @media only screen and (min-width: 0rem) {
   #pricing-1103 {
     border-top: 2px dashed #000000;
+    border-bottom: 2px dashed #000000;
     padding: var(--sectionPadding);
     background-color: #f7f8f8;
   }
