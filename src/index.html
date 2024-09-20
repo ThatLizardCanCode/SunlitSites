@@ -756,7 +756,7 @@ eleventyNavigation:
             <span class="cs-topper">About us</span>
             <h2 class="cs-title" id="hero-title">The Faces Behind Sunlit Sites</h2>
             <p class="cs-text">
-              I'm Hannah, the developer behind our websites, and I work with my partner Jayden, who has a bachelor's degree in Business and Accounting. Jayden is in charge of all administrative tasks and photography. Based in Nelson Bays, I learned to code as a pastime a few years ago, and now I'm eager to share my passion for design through code, supporting small businesses in bringing their visions to reality.
+              I'm Hannah, the developer behind our websites, and I work alongside my partner Jayden, who has a bachelor's degree in Business and Accounting. Jayden is in charge of all administrative tasks and photography, while i handle the design and devlopment. Based in Nelson Bays, we're supporting small businesses in bringing their visions to reality.
             <a href="./about" class="a-btn">Learn More </a>
 			</p>
             <ul class="cs-ul">
@@ -778,92 +778,93 @@ eleventyNavigation:
 </section>
                                 
 
-<!-- ============================================ -->
-<!--                   Pricing                    -->
-<!-- ============================================ -->
-
-<section id="pricing-1103">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Pricing</span>
-            <h2 class="cs-title" id="hero-title">Affordable Pricing Plans</h2>
-            <p class="cs-text">
-                We offer flexible and affordable website solutions to meet the needs of small businesses. Whether you're looking for a simple 5-page site or a larger, more complex project, we have you covered with transparent pricing and dedicated support.
-            </p>
-            <a href="" class="cs-button-solid">More Info</a>
-        </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <span class="cs-package">Standard 5 Page Site</span>
-                <span class="cs-price">
-                    $185
-                    <span class="cs-duration">/ Month</span>
-                </span>
-                <ul class="cs-ul">
-                    <li class="cs-li">
-                        Unlimited Content & Design Edits
-                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="18" height="18">
-                    </li>
-                    <li class="cs-li">
-                        Hosting / Domain Mangement
-                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="18" height="18">
-                    </li>
-                    <li class="cs-li">
-                        Lifetime Updates & Support
-                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="18" height="18">
-                    </li>
-                    <li class="cs-li">
-                        Photography Included
-                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="18" height="18">
-                    </li>
-                    <li class="cs-li">
-                        SEO Optimization, Accessibility & Performance Monitoring
-                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="18" height="18">
-                    </li>
-                    <li class="cs-li">
-                        User Admin Panel for Content Management
-                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="18" height="18">
-                    </li>
-                </ul>
-            </li>
-            <li class="cs-item">
-                <span class="cs-package">Large 5+ Page Site</span>
-                <span class="cs-price">1.5K
-					<span class="cs-duration">/ Starting</span>
-				</span>
-				
-                <ul class="cs-ul">
-                    <li class="cs-li">
-                        $50 per hour for additional work
-                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="18" height="18">
-                    </li>
-                    <li class="cs-li">
-                        Hosting & Domain Mangement $30/mo
-                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="18" height="18">
-                    </li>
-                    <li class="cs-li">
-                        On Demand Support
-                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="18" height="18">
-                    </li>
-                    <li class="cs-li">
-                        Photography Included
-                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="18" height="18">
-                    </li>
-
-                    <li class="cs-li">
-                        User Admin Panel for Content Management
-                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="18" height="18">
-                    </li>
-					<li class="cs-li cs-disabled">
-                        Performance not Monitored
-                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg" alt="checkmark" width="18" height="18">
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</section>
+    {% include 'components/cta.html' %}
                                 
 
 
+<script>
+	// Function to handle dropdown toggle
+function toggleDropdown(element) {
+    element.classList.toggle("cs-active");
+    const dropdownButton = element.querySelector(".cs-dropdown-button");
+    if (dropdownButton) {
+        toggleAriaExpanded(dropdownButton);
+    }
+}
+
+// Add event listeners to each dropdown element for accessibility
+const dropdownElements = document.querySelectorAll(".cs-dropdown");
+dropdownElements.forEach(element => {
+    let escapePressed = false;
+
+    element.addEventListener("focusout", function (event) {
+        // Skip the focusout logic if escape was pressed
+        if (escapePressed) {
+            escapePressed = false;
+            return;
+        }
+
+        // If the focus has moved outside the dropdown, remove the active class from the dropdown 
+        if (!element.contains(event.relatedTarget)) {
+            element.classList.remove("cs-active");
+            const dropdownButton = element.querySelector(".cs-dropdown-button");
+
+            if (dropdownButton) {
+                toggleAriaExpanded(dropdownButton);
+            }
+        }
+    });
+
+    element.addEventListener("keydown", function (event) {
+        if (element.classList.contains("cs-active")) {
+            event.stopPropagation();
+        }
+
+        // Pressing Enter or Space will toggle the dropdown and adjust the aria-expanded attribute
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            toggleDropdown(element);
+        }
+
+        // Pressing Escape will remove the active class from the dropdown. The stopPropagation above will stop the hamburger menu from closing
+        if (event.key === "Escape") {
+            escapePressed = true;
+            toggleDropdown(element);
+        }
+    });
+
+    // Handles dropdown menus on mobile - the matching media query (max-width: 63.9375rem) is necessary so that clicking the dropdown button on desktop does not add the active class and thus interfere with the hover state
+    const maxWidthMediaQuery = window.matchMedia("(max-width: 63.9375rem)");
+    if (maxWidthMediaQuery.matches) {
+        element.addEventListener("click", () => toggleDropdown(element));
+    }
+});
+
+// Pressing Enter will redirect to the href
+const dropdownLinks = document.querySelectorAll(".cs-drop-li > .cs-li-link");
+dropdownLinks.forEach(link => {
+    link.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            window.location.href = this.href;
+        }
+    });
+});
+
+// If you press Escape and the hamburger menu is open, close it
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && hamburgerMenu.classList.contains("cs-active")) {
+        toggleMenu();
+    }
+});
+
+const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+            item.classList.toggle('active')
+        }
+        item.addEventListener('click', onClick)
+        }
+		
+		
+		</script>
 {% endblock %}
