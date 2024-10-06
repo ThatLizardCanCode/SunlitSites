@@ -17,6 +17,26 @@
         --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
     }
 
+        
+    #hero-title{
+        color: white !important; 
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        line-height: 1.2em;
+        font-weight: 1em !important;
+        
+        text-shadow: 
+          -1px 2px 0 #000,
+          -2px 2px 0 #000,
+          -3px 3px 0 #000,
+          -4px 4px 0 #000,
+          -5px 5px 0 #000,
+          -6px 6px 0 #000,
+          -7px 7px 0 #000;
+        
+
+     }
+
     #cs-contact {
         padding: var(--sectionPadding);
         font-family: "Roboto", "Arial", sans-serif;
@@ -76,7 +96,7 @@
             input,
             textarea {
                 border: 1px solid #b4b2c7;
-                border-radius: calc(8 / 16 * 1rem);
+                // border-radius: calc(8 / 16 * 1rem);
                 margin-top: calc(4 / 16 * 1rem);
                 height: calc(64 / 16 * 1rem);
                 width: 100%;
@@ -109,7 +129,7 @@
             flex-direction: column;
             justify-content: flex-end;
             align-items: flex-start;
-            border-radius: calc(8 / 16 * 1rem);
+            // border-radius: calc(8 / 16 * 1rem);
             height: calc(320 / 16 * 1rem);
             /* cuts off corners on img tag */
             overflow: hidden;
