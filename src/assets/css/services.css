@@ -833,6 +833,9 @@
   #sbs-1095-1112 #content::before {
     visibility: hidden;
   }
+  #sbs-1095-1112 #content.cs-li {
+    margin-bottom: 1rem;
+  }
   #sbs-1095-1112 #sbs-1095-1112 {
     background-color: var(--backgroundPrimaryLight) !important;
   }

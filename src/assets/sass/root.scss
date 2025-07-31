@@ -1279,6 +1279,21 @@ body {
             margin: 0 0 calc(8 / 16 * 1rem) 0;
             color: #767676;
             display: block;
+
+        }
+
+        .bottom{
+            font-weight: 500;
+            color: #767676c0;
+            font-size: clamp(0.775rem, 1.4vw, 0.9rem);
+            line-height: 1.5em;
+            border-top: 1px solid #767676c0;
+            margin: clamp(1.25rem, 3vw, 1.5rem) 0 0 0;
+            padding: clamp(1.25rem, 3vw, 1.5rem) 0 0 0;
+            // margin-bottom: auto;
+            // margin-top: auto;
+
+            
         }
 
         .cs-price {
@@ -1607,6 +1622,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-top: 0.5em;
         }
 
         .cs-link {

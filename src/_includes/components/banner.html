@@ -1,4 +1,7 @@
-
+---
+breadcrumbs: ''
+backlinks: ''
+---
 <!-- ============================================ -->
 <!--                   Banner                     -->
 <!-- ============================================ -->
@@ -8,10 +11,10 @@
 
         <div class="cs-content">
             <!-- Right content, e.g., About Us text -->
-            <span class="cs-int-title" id="hero-title">{{ page.title }}</span>
+            <span class="cs-int-title" id="hero-title">{{ breadcrumbs }}</span>
             <div class="cs-breadcrumbs">
-                <a href="" class="cs-link">Home</a>
-                <a href="" class="cs-link cs-active">{{ page.title }}</a>
+                <a href="/" class="cs-link">Home</a>
+                <a href="" class="cs-link cs-active">{{ breadcrumbs }}</a>
             </div>
         </div>
 

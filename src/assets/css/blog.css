@@ -13,7 +13,6 @@
     z-index: 1;
     position: relative;
     display: inline-block;
-    border-radius: 0.25rem;
     margin: auto;
     background-color: var(--headerColor);
     min-width: 9.375rem;
@@ -38,7 +37,6 @@
     content: "";
     opacity: 0;
     border: 1px solid var(--headerColor);
-    border-radius: 0.25rem;
     background: #fff;
     height: 100%;
     width: 100%;
@@ -193,6 +191,9 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+  .border {
+    border-top: 2px dashed #000000;
+  }
   .blog-container {
     padding: clamp(60px, 7vw, 100px) 0;
   }
@@ -234,7 +235,8 @@
   .recent-articles .blog-mainImage {
     position: relative;
     display: block;
-    border-radius: 0.5em 0.5em 0 0;
+    border: 3px solid #000000;
+    border-bottom: none;
     height: clamp(200px, 30vw, 400px);
     width: 100%;
     overflow: hidden;
@@ -248,8 +250,7 @@
     object-fit: cover;
   }
   .recent-articles .article-group {
-    border: 1px solid #ebebeb;
-    border-radius: 0 0 0.5em 0.5em;
+    border: 3px solid #000000;
     padding: clamp(30px, 5vw, 50px);
   }
   .recent-articles .blog-author-img {
@@ -304,7 +305,6 @@
     z-index: 1;
     position: relative;
     display: inline-block;
-    border-radius: 0.25rem;
     margin: auto;
     background-color: var(--headerColor);
     min-width: 9.375rem;
@@ -329,7 +329,6 @@
     content: "";
     opacity: 0;
     border: 1px solid var(--headerColor);
-    border-radius: 0.25rem;
     background: #fff;
     height: 100%;
     width: 100%;
@@ -407,8 +406,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid #ebebeb;
-    border-radius: 0.5em;
+    border: 2px solid #000000;
+    box-shadow: 10px 10px;
     width: 100%;
     padding: 2.1875em 1.875em;
   }
@@ -451,7 +450,6 @@
   .blog-sidebar .blog-featureImage {
     position: relative;
     display: block;
-    border-radius: 50%;
     height: 3.75em;
     width: 3.75em;
     overflow: hidden;
@@ -501,7 +499,6 @@
   .blog-article .blog-mainImage {
     position: relative;
     display: block;
-    border-radius: 0.5em;
     margin-bottom: 3.125em;
     height: clamp(200px, 30vw, 400px);
     width: 100%;
