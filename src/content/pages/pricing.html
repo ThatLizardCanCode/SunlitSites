@@ -1,0 +1,29 @@
+---
+title: 'Pricing | Sunlit Sites Web Designs'
+breadcrumbs: 'Pricing'
+description: 'Meta description for the page'
+preloadImg: ''
+permalink: '/pricing/'
+eleventyNavigation:
+    key: Pricing
+    order: 400
+
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/reviews.css">
+    <!-- THIS PAGE'S SPECIFIC CSS -->
+    <style>  /* Remove border from banner on this page only */
+        #pricing-1103 { border-top: none !important;}
+    </style>
+{% endblock %}
+
+{% block body %}
+
+
+{% include 'components/banner.html'%}
+{% include 'components/cta.html' %}
+
+{% endblock %}

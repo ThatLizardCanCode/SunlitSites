@@ -22,7 +22,7 @@
     --secondaryLight: #f7cc87;
     --headerColor: #1a1a1a;
     --headerColorLight: #ffffff;
-    --bodyTextColor: #222222;
+    --bodyTextColor: #3e2c23;
     --bodyTextColorLight: #222222;
     --bodyTextColorWhite: #ffffff;
     --btnDark: #1a1a1a;
@@ -49,6 +49,7 @@ body {
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
 }
+
 
 .a-btn{
     color: var(--primary);
@@ -1161,6 +1162,7 @@ body {
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+    
     #pricing-1103 {
         border-top: 2px dashed #000000;
         border-bottom: 2px dashed #000000;

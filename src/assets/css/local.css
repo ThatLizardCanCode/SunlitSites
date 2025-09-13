@@ -1,4 +1,4 @@
-/* PAGE-SPECIFIC STYLES FOR THE HOME PAGE */
+/* PAGE-SPECIFIC STYLES FOR THE Index PAGE */
 /*-- -------------------------- -->
 <---            Hero            -->
 <--- -------------------------- -*/
@@ -8,9 +8,12 @@
     text-align: center;
     /* 116px - 164px top */
     /* 60px - 100px  bottom */
-    padding: clamp(7.25rem, 16.82vw, 10.25rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
+    padding: clamp(7.25rem, 16.82vw, 10.25rem) 1rem clamp(3.75rem, 7.82vw, 1rem);
     position: relative;
     min-height: 415px;
+  }
+  #hero-288 .hero-topper {
+    color: var(--bodyTextColor);
   }
   #hero-288 .cs-container {
     width: 100%;
@@ -102,25 +105,17 @@
     /* makes image act as a background image */
     object-fit: cover;
   }
-  #hero-288 .cs-waves {
-    width: 100%;
-    height: 30%;
-    background-color: var(--primary);
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
+  #pricing-1103 {
+    padding-top: 0;
+    border-top: 0px dashed #000000;
+    border-bottom: 0px dashed #000000;
   }
-  #hero-288 .cs-waves img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* makes image act as a background image */
-    object-fit: cover;
+  #pricing-1103 .cs-content {
+    visibility: collapse;
+    display: none;
+  }
+  #pricing-1103 .cs-container {
+    flex-direction: column;
   }
 }
 /* Small Desktop - 1024px */
@@ -155,23 +150,7 @@
     left: 50%;
     margin-left: 12.5rem;
   }
-}
-@media only screen and (min-width: 0rem) {
-  #hero-title {
-    color: white !important;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    line-height: 1.2em;
-    font-weight: 1em !important;
-    text-shadow: -1px 2px 0 #000, -2px 2px 0 #000, -3px 3px 0 #000, -4px 4px 0 #000, -5px 5px 0 #000, -6px 6px 0 #000, -7px 7px 0 #000;
-  }
-  #hero-288 {
-    position: relative;
-    overflow: hidden;
-    background-color: var(--backgroundPrimary);
-    min-height: 415px;
-  }
-  .section-center {
+  #hero-288 .section-center {
     position: relative;
     width: 600px;
     height: 450px;
@@ -180,7 +159,7 @@
     margin: 0 auto;
     overflow: hidden;
   }
-  .section-up {
+  #hero-288 .section-up {
     position: absolute;
     width: 100%;
     height: 270px;
@@ -189,7 +168,7 @@
     display: block;
     z-index: 5;
   }
-  .hill {
+  #hero-288 .hill {
     position: absolute;
     width: 115px;
     height: 27px;
@@ -198,22 +177,22 @@
     display: block;
     z-index: 15;
   }
-  .hill.snd {
+  #hero-288 .hill.snd {
     left: 115px;
     z-index: 14;
   }
-  .hill.trd {
+  #hero-288 .hill.trd {
     transform: rotateY(180deg);
     left: auto;
     right: 30px;
   }
-  .hill.frt {
+  #hero-288 .hill.frt {
     transform: rotateY(180deg);
     left: auto;
     right: 110px;
     z-index: 14;
   }
-  .hill span {
+  #hero-288 .hill span {
     position: absolute;
     width: 60px;
     height: 60px;
@@ -225,7 +204,7 @@
     border: 2px solid #030308;
     border-color: #030308 transparent transparent transparent;
   }
-  .hill span:nth-child(2) {
+  #hero-288 .hill span:nth-child(2) {
     width: 110px;
     height: 110px;
     left: -6px;
@@ -234,7 +213,7 @@
     transform: rotate(5deg);
     border-color: transparent transparent transparent #030308;
   }
-  .hill span:nth-child(3) {
+  #hero-288 .hill span:nth-child(3) {
     width: 10px;
     height: 10px;
     left: 2px;
@@ -243,7 +222,7 @@
     border: none;
     border-radius: 0;
   }
-  .hill span:nth-child(4) {
+  #hero-288 .hill span:nth-child(4) {
     width: 40px;
     height: 40px;
     left: auto;
@@ -251,7 +230,7 @@
     right: 5px;
     border-color: #030308 transparent transparent transparent;
   }
-  .hill span:nth-child(5) {
+  #hero-288 .hill span:nth-child(5) {
     width: 110px;
     height: 110px;
     left: auto;
@@ -261,7 +240,7 @@
     transform: rotate(85deg);
     border-color: #030308 transparent transparent transparent;
   }
-  .hill span:nth-child(6) {
+  #hero-288 .hill span:nth-child(6) {
     width: 24px;
     height: 24px;
     left: auto;
@@ -270,7 +249,7 @@
     background-color: transparent;
     border-color: transparent transparent #030308 transparent;
   }
-  .hill span:nth-child(7) {
+  #hero-288 .hill span:nth-child(7) {
     width: 17px;
     height: 4px;
     left: auto;
@@ -281,7 +260,7 @@
     transform: rotate(33deg);
     border-color: #030308 transparent transparent transparent;
   }
-  .hill span:nth-child(8) {
+  #hero-288 .hill span:nth-child(8) {
     width: 20px;
     height: 10px;
     left: 65px;
@@ -290,7 +269,7 @@
     border: none;
     border-radius: 0;
   }
-  .hill span:nth-child(9) {
+  #hero-288 .hill span:nth-child(9) {
     width: 30px;
     height: 10px;
     left: 46px;
@@ -299,7 +278,7 @@
     border: none;
     border-radius: 0;
   }
-  .hill span:nth-child(10) {
+  #hero-288 .hill span:nth-child(10) {
     width: 20px;
     height: 10px;
     left: 60px;
@@ -307,7 +286,7 @@
     border: none;
     border-radius: 0;
   }
-  .hill span:nth-child(11) {
+  #hero-288 .hill span:nth-child(11) {
     width: 20px;
     height: 10px;
     left: 101px;
@@ -316,7 +295,7 @@
     border-radius: 0;
     transform: rotate(45deg);
   }
-  .left-tree {
+  #hero-288 .left-tree {
     position: absolute;
     width: 20px;
     height: 33px;
@@ -339,7 +318,7 @@
       transform: rotate(11deg) skewX(3deg);
     }
   }
-  .left-tree span {
+  #hero-288 .left-tree span {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -349,7 +328,7 @@
     border: 2px solid #030308;
     background-color: #fff;
   }
-  .left-tree span:nth-child(2) {
+  #hero-288 .left-tree span:nth-child(2) {
     width: 2px;
     height: 25px;
     left: 9px;
@@ -359,7 +338,7 @@
     border: none;
     background-color: #030308;
   }
-  .left-tree span:nth-child(3) {
+  #hero-288 .left-tree span:nth-child(3) {
     width: 2px;
     height: 5px;
     left: 7px;
@@ -370,7 +349,7 @@
     background-color: #030308;
     transform: rotate(-45deg);
   }
-  .left-tree span:nth-child(4) {
+  #hero-288 .left-tree span:nth-child(4) {
     width: 2px;
     height: 5px;
     left: 11px;
@@ -381,7 +360,7 @@
     background-color: #030308;
     transform: rotate(45deg);
   }
-  .right-tree {
+  #hero-288 .right-tree {
     position: absolute;
     width: 20px;
     height: 33px;
@@ -393,7 +372,7 @@
     transform-origin: center bottom;
     animation: moveTree 1.6s ease infinite;
   }
-  .right-tree span {
+  #hero-288 .right-tree span {
     position: absolute;
     width: 18px;
     height: 18px;
@@ -403,7 +382,7 @@
     border: 2px solid #030308;
     background-color: #fff;
   }
-  .right-tree span:nth-child(2) {
+  #hero-288 .right-tree span:nth-child(2) {
     width: 2px;
     height: 25px;
     left: 9px;
@@ -413,7 +392,7 @@
     border: none;
     background-color: #030308;
   }
-  .right-tree span:nth-child(3) {
+  #hero-288 .right-tree span:nth-child(3) {
     width: 2px;
     height: 5px;
     left: 7px;
@@ -424,7 +403,7 @@
     background-color: #030308;
     transform: rotate(-45deg);
   }
-  .right-tree span:nth-child(4) {
+  #hero-288 .right-tree span:nth-child(4) {
     width: 2px;
     height: 5px;
     left: 11px;
@@ -435,7 +414,7 @@
     background-color: #030308;
     transform: rotate(45deg);
   }
-  .right-tree span:nth-child(5) {
+  #hero-288 .right-tree span:nth-child(5) {
     position: absolute;
     width: 14px;
     height: 14px;
@@ -446,14 +425,14 @@
     background-color: #fff;
     border-bottom-color: transparent;
   }
-  .building-left {
+  #hero-288 .building-left {
     position: absolute;
     left: 62px;
     bottom: 3px;
     display: block;
     z-index: 9;
   }
-  .building-left span {
+  #hero-288 .building-left span {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -462,29 +441,29 @@
     width: 17px;
     height: 42px;
   }
-  .building-left span:nth-child(2) {
+  #hero-288 .building-left span:nth-child(2) {
     left: 20px;
     width: 30px;
     height: 64px;
   }
-  .building-left span:nth-child(3) {
+  #hero-288 .building-left span:nth-child(3) {
     left: 23px;
     bottom: 62px;
     width: 24px;
     height: 9px;
   }
-  .building-left span:nth-child(4) {
+  #hero-288 .building-left span:nth-child(4) {
     left: 54px;
     width: 20px;
     height: 46px;
   }
-  .building-left span:nth-child(5) {
+  #hero-288 .building-left span:nth-child(5) {
     left: 56px;
     bottom: 44px;
     width: 16px;
     height: 7px;
   }
-  .building-left span:nth-child(6) {
+  #hero-288 .building-left span:nth-child(6) {
     left: 2px;
     bottom: 27px;
     border: none;
@@ -492,7 +471,7 @@
     width: 6px;
     height: 2px;
   }
-  .building-left span:nth-child(7) {
+  #hero-288 .building-left span:nth-child(7) {
     left: 22px;
     bottom: 44px;
     border: none;
@@ -500,7 +479,7 @@
     width: 11px;
     height: 2px;
   }
-  .building-left span:nth-child(8) {
+  #hero-288 .building-left span:nth-child(8) {
     left: 39px;
     bottom: 20px;
     border: none;
@@ -508,7 +487,7 @@
     width: 11px;
     height: 2px;
   }
-  .building-left span:nth-child(9) {
+  #hero-288 .building-left span:nth-child(9) {
     left: 56px;
     bottom: 31px;
     border: none;
@@ -516,7 +495,7 @@
     width: 8px;
     height: 2px;
   }
-  .building-left span:nth-child(10) {
+  #hero-288 .building-left span:nth-child(10) {
     left: 29px;
     bottom: 71px;
     border: none;
@@ -524,7 +503,7 @@
     width: 2px;
     height: 17px;
   }
-  .building-left span:nth-child(11) {
+  #hero-288 .building-left span:nth-child(11) {
     left: 39px;
     bottom: 71px;
     border: none;
@@ -532,14 +511,14 @@
     width: 2px;
     height: 17px;
   }
-  .building-right {
+  #hero-288 .building-right {
     position: absolute;
     right: 67px;
     bottom: 0;
     display: block;
     z-index: 8;
   }
-  .building-right span {
+  #hero-288 .building-right span {
     position: absolute;
     right: 18px;
     bottom: 0;
@@ -548,7 +527,7 @@
     width: 86px;
     height: 24px;
   }
-  .building-right span:nth-child(2) {
+  #hero-288 .building-right span:nth-child(2) {
     right: 18px;
     bottom: 22px;
     width: 96px;
@@ -556,13 +535,13 @@
     transform-origin: center bottom;
     transform: skewX(-20deg);
   }
-  .building-right span:nth-child(3) {
+  #hero-288 .building-right span:nth-child(3) {
     right: 0;
     bottom: 0;
     width: 22px;
     height: 52px;
   }
-  .building-right span:nth-child(4) {
+  #hero-288 .building-right span:nth-child(4) {
     right: 2px;
     bottom: 42px;
     background-color: #030308;
@@ -570,7 +549,7 @@
     width: 7px;
     height: 2px;
   }
-  .building-right span:nth-child(5) {
+  #hero-288 .building-right span:nth-child(5) {
     right: 13px;
     bottom: 32px;
     background-color: #030308;
@@ -578,7 +557,7 @@
     width: 7px;
     height: 2px;
   }
-  .building-right span:nth-child(6) {
+  #hero-288 .building-right span:nth-child(6) {
     right: 10px;
     bottom: 52px;
     background-color: #030308;
@@ -586,7 +565,7 @@
     width: 2px;
     height: 32px;
   }
-  .building-right span:nth-child(7) {
+  #hero-288 .building-right span:nth-child(7) {
     right: -4px;
     bottom: 74px;
     border: none;
@@ -600,7 +579,7 @@
     transform-origin: left center;
     animation: moveFlag 1.5s ease infinite;
   }
-  .building-right span:nth-child(8) {
+  #hero-288 .building-right span:nth-child(8) {
     right: 2px;
     bottom: 76px;
     border: none;
@@ -625,7 +604,7 @@
       transform: skewY(-15deg);
     }
   }
-  .building-right span:nth-child(9) {
+  #hero-288 .building-right span:nth-child(9) {
     right: 31px;
     bottom: 0;
     width: 33px;
@@ -634,7 +613,7 @@
     background-color: transparent;
     border: none;
   }
-  .building-right span:nth-child(9) span {
+  #hero-288 .building-right span:nth-child(9) span {
     right: 0;
     bottom: 0;
     width: 33px;
@@ -642,7 +621,7 @@
     transform-origin: bottom center;
     transform: rotateX(13deg);
   }
-  .building-right span:nth-child(10) {
+  #hero-288 .building-right span:nth-child(10) {
     right: 31px;
     bottom: 55px;
     width: 33px;
@@ -650,7 +629,7 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
   }
-  .building-right span:nth-child(11) {
+  #hero-288 .building-right span:nth-child(11) {
     right: 36px;
     bottom: 63px;
     width: 23px;
@@ -658,13 +637,13 @@
     border-top-left-radius: 11px;
     border-top-right-radius: 11px;
   }
-  .building-right span:nth-child(12) {
+  #hero-288 .building-right span:nth-child(12) {
     right: 42px;
     bottom: 91px;
     width: 11px;
     height: 7px;
   }
-  .building-right span:nth-child(13) {
+  #hero-288 .building-right span:nth-child(13) {
     right: 46px;
     bottom: 98px;
     width: 3px;
@@ -672,19 +651,19 @@
     background-color: #030308;
     height: 18px;
   }
-  .building-right span:nth-child(14) {
+  #hero-288 .building-right span:nth-child(14) {
     right: 43px;
     bottom: 17px;
     width: 9px;
     height: 11px;
   }
-  .building-right span:nth-child(15) {
+  #hero-288 .building-right span:nth-child(15) {
     right: 43px;
     bottom: 35px;
     width: 9px;
     height: 11px;
   }
-  .building-right span:nth-child(16) {
+  #hero-288 .building-right span:nth-child(16) {
     right: 43px;
     bottom: 63px;
     width: 9px;
@@ -692,7 +671,7 @@
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
   }
-  .bird-wrapper {
+  #hero-288 .bird-wrapper {
     position: absolute;
     left: 166px;
     bottom: 46px;
@@ -701,12 +680,12 @@
     animation: birdFly 3.5s ease infinite;
     animation-delay: 0.4s;
   }
-  .bird-wrapper.snd {
+  #hero-288 .bird-wrapper.snd {
     left: 340px;
     bottom: 65px;
     animation-delay: 0s;
   }
-  .bird-wrapper.trd {
+  #hero-288 .bird-wrapper.trd {
     left: 420px;
     bottom: 132px;
     animation-delay: 1s;
@@ -722,7 +701,7 @@
       transform: translateY(0);
     }
   }
-  .left-wing {
+  #hero-288 .left-wing {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -731,7 +710,7 @@
     transform-origin: right bottom;
     animation: wingLeft 0.4s ease infinite;
   }
-  .left-wing span {
+  #hero-288 .left-wing span {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -753,7 +732,7 @@
       transform: rotate(0);
     }
   }
-  .right-wing {
+  #hero-288 .right-wing {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -762,7 +741,7 @@
     transform-origin: left bottom;
     animation: wingRight 0.4s ease infinite;
   }
-  .right-wing span {
+  #hero-288 .right-wing span {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -784,13 +763,13 @@
       transform: rotate(0);
     }
   }
-  .sun {
+  #hero-288 .sun {
     position: absolute;
     left: 200px;
     top: 50px;
     z-index: 4;
   }
-  .sun span {
+  #hero-288 .sun span {
     position: absolute;
     left: 0;
     top: 0;
@@ -812,7 +791,7 @@
       transform: scale(1);
     }
   }
-  .cloud-left {
+  #hero-288 .cloud-left {
     position: absolute;
     left: 124px;
     top: 113px;
@@ -821,7 +800,7 @@
     height: 20px;
     animation: cloudMove 1.7s linear infinite;
   }
-  .cloud-left span {
+  #hero-288 .cloud-left span {
     position: absolute;
     right: 0;
     top: 0;
@@ -832,7 +811,7 @@
     border: 2px solid #030308;
     border-color: #030308 #030308 #030308 transparent;
   }
-  .cloud-left span:nth-child(2) {
+  #hero-288 .cloud-left span:nth-child(2) {
     right: auto;
     left: 0;
     top: 3px;
@@ -846,7 +825,7 @@
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
   }
-  .cloud-left span:nth-child(3) {
+  #hero-288 .cloud-left span:nth-child(3) {
     right: 12px;
     top: auto;
     bottom: 0;
@@ -867,7 +846,7 @@
       transform: translateX(0);
     }
   }
-  .cloud-middle {
+  #hero-288 .cloud-middle {
     position: absolute;
     left: 285px;
     top: 117px;
@@ -877,7 +856,7 @@
     animation: cloudMove 1.7s linear infinite;
     animation-delay: 0.4s;
   }
-  .cloud-middle span {
+  #hero-288 .cloud-middle span {
     position: absolute;
     right: 0;
     top: 0;
@@ -888,7 +867,7 @@
     border: 2px solid #030308;
     border-color: #030308 #030308 #030308 transparent;
   }
-  .cloud-middle span:nth-child(2) {
+  #hero-288 .cloud-middle span:nth-child(2) {
     right: auto;
     left: 0;
     top: 4px;
@@ -902,7 +881,7 @@
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
   }
-  .cloud-middle span:nth-child(3) {
+  #hero-288 .cloud-middle span:nth-child(3) {
     right: 14px;
     top: auto;
     bottom: 0;
@@ -912,7 +891,7 @@
     border: none;
     border-bottom: 2px solid #030308;
   }
-  .cloud-right {
+  #hero-288 .cloud-right {
     position: absolute;
     right: 64px;
     top: 73px;
@@ -922,7 +901,7 @@
     animation: cloudMove 1.7s linear infinite;
     animation-delay: 0.6s;
   }
-  .cloud-right span {
+  #hero-288 .cloud-right span {
     position: absolute;
     right: 0;
     top: 0;
@@ -933,7 +912,7 @@
     border: 2px solid #030308;
     border-color: #030308 #030308 #030308 transparent;
   }
-  .cloud-right span:nth-child(2) {
+  #hero-288 .cloud-right span:nth-child(2) {
     right: auto;
     left: 0;
     top: 3px;
@@ -947,7 +926,7 @@
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
   }
-  .cloud-right span:nth-child(3) {
+  #hero-288 .cloud-right span:nth-child(3) {
     right: 7px;
     top: auto;
     bottom: 0;
@@ -957,7 +936,7 @@
     border: none;
     border-bottom: 2px solid #030308;
   }
-  .section-down {
+  #hero-288 .section-down {
     position: absolute;
     width: 100%;
     height: 180px;
@@ -968,7 +947,7 @@
     border-top: 2px solid #030308;
     background-color: var(--backgroundPrimary);
   }
-  .water-wrapper {
+  #hero-288 .water-wrapper {
     position: absolute;
     left: 65px;
     bottom: 0;
@@ -978,15 +957,15 @@
     z-index: 6;
     overflow: hidden;
   }
-  .water-wrapper.right {
+  #hero-288 .water-wrapper.right {
     left: 450px;
     bottom: -20px;
   }
-  .water-wrapper.top.right {
+  #hero-288 .water-wrapper.top.right {
     left: 454.5px;
     bottom: -10px;
   }
-  .water-wrap {
+  #hero-288 .water-wrap {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -1005,7 +984,7 @@
       transform: translateX(-33.3333333333%);
     }
   }
-  .water {
+  #hero-288 .water {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -1015,13 +994,13 @@
     z-index: 6;
     background-color: var(--backgroundPrimary);
   }
-  .water.snd {
+  #hero-288 .water.snd {
     left: 77px;
   }
-  .water.trd {
+  #hero-288 .water.trd {
     left: 154px;
   }
-  .water span {
+  #hero-288 .water span {
     position: absolute;
     left: -4px;
     top: 12px;
@@ -1033,48 +1012,48 @@
     border: 2px solid #030308;
     border-color: #030308 transparent transparent transparent;
   }
-  .water span:nth-child(2) {
+  #hero-288 .water span:nth-child(2) {
     left: 9px;
     top: -1px;
     border-color: transparent transparent #030308 transparent;
   }
-  .water span:nth-child(3) {
+  #hero-288 .water span:nth-child(3) {
     left: 22px;
   }
-  .water span:nth-child(4) {
+  #hero-288 .water span:nth-child(4) {
     left: 35px;
     top: -1px;
     border-color: transparent transparent #030308 transparent;
   }
-  .water span:nth-child(5) {
+  #hero-288 .water span:nth-child(5) {
     left: 48px;
   }
-  .water span:nth-child(6) {
+  #hero-288 .water span:nth-child(6) {
     left: 61px;
     top: -1px;
     border-color: transparent transparent #030308 transparent;
   }
-  .water-wrapper.top {
+  #hero-288 .water-wrapper.top {
     width: 68px;
     left: 69.5px;
     bottom: 10px;
     z-index: 7;
   }
-  .water-wrapper.top .water-wrap {
+  #hero-288 .water-wrapper.top .water-wrap {
     width: 204px;
   }
-  .water-wrapper.top .water {
+  #hero-288 .water-wrapper.top .water {
     height: 70px;
     width: 68px;
     background-color: transparent;
   }
-  .water-wrapper.top .water.snd {
+  #hero-288 .water-wrapper.top .water.snd {
     left: 68px;
   }
-  .water-wrapper.top .water.trd {
+  #hero-288 .water-wrapper.top .water.trd {
     left: 136px;
   }
-  .water-wrapper.top .water span {
+  #hero-288 .water-wrapper.top .water span {
     position: absolute;
     left: -3px;
     top: 12px;
@@ -1086,28 +1065,28 @@
     border: 2px solid #030308;
     border-color: #030308 transparent transparent transparent;
   }
-  .water-wrapper.top .water span:nth-child(2) {
+  #hero-288 .water-wrapper.top .water span:nth-child(2) {
     left: 8px;
     top: 0;
     border-color: transparent transparent #030308 transparent;
   }
-  .water-wrapper.top .water span:nth-child(3) {
+  #hero-288 .water-wrapper.top .water span:nth-child(3) {
     left: 19px;
   }
-  .water-wrapper.top .water span:nth-child(4) {
+  #hero-288 .water-wrapper.top .water span:nth-child(4) {
     left: 30px;
     top: 0;
     border-color: transparent transparent #030308 transparent;
   }
-  .water-wrapper.top .water span:nth-child(5) {
+  #hero-288 .water-wrapper.top .water span:nth-child(5) {
     left: 41px;
   }
-  .water-wrapper.top .water span:nth-child(6) {
+  #hero-288 .water-wrapper.top .water span:nth-child(6) {
     left: 53px;
     top: 0;
     border-color: transparent transparent #030308 transparent;
   }
-  .fish-wrapper {
+  #hero-288 .fish-wrapper {
     position: absolute;
     left: 82px;
     bottom: 85px;
@@ -1116,16 +1095,16 @@
     display: block;
     z-index: 4;
   }
-  .fish-wrapper.right {
+  #hero-288 .fish-wrapper.right {
     left: 467px;
     bottom: 70px;
   }
-  .fish-wrapper.right .fish-wrap {
+  #hero-288 .fish-wrapper.right .fish-wrap {
     transform: translate(-35px, 60px) rotate(-90deg);
     animation: moveFish-higher 3.5s linear infinite;
     animation-delay: 1s;
   }
-  .fish-wrap {
+  #hero-288 .fish-wrap {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -1195,7 +1174,7 @@
       transform: translate(-35px, 60px) rotate(-90deg);
     }
   }
-  .fish {
+  #hero-288 .fish {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -1205,7 +1184,7 @@
     z-index: 4;
     transform: scale(1, 0.45);
   }
-  .fish span {
+  #hero-288 .fish span {
     position: absolute;
     left: 0;
     top: 0;
@@ -1218,7 +1197,7 @@
     border-bottom-left-radius: 53%;
     transform: rotate(45deg);
   }
-  .fish span:nth-child(2) {
+  #hero-288 .fish span:nth-child(2) {
     position: absolute;
     left: 39px;
     top: 16px;
@@ -1231,7 +1210,7 @@
     transform: rotate(45deg);
     animation: fishTail-bottom 3.5s linear infinite;
   }
-  .fish-wrapper.right .fish span:nth-child(2) {
+  #hero-288 .fish-wrapper.right .fish span:nth-child(2) {
     animation-delay: 1s;
   }
   @keyframes fishTail-bottom {
@@ -1286,7 +1265,7 @@
       top: 16px;
     }
   }
-  .fish span:nth-child(3) {
+  #hero-288 .fish span:nth-child(3) {
     position: absolute;
     left: 39px;
     top: 16px;
@@ -1299,7 +1278,7 @@
     transform: rotate(-45deg);
     animation: fishTail-top 3.5s linear infinite;
   }
-  .fish-wrapper.right .fish span:nth-child(3) {
+  #hero-288 .fish-wrapper.right .fish span:nth-child(3) {
     animation-delay: 1s;
   }
   @keyframes fishTail-top {
@@ -1354,7 +1333,7 @@
       top: 16px;
     }
   }
-  .fish span:nth-child(4) {
+  #hero-288 .fish span:nth-child(4) {
     position: absolute;
     left: 9px;
     top: 14px;
@@ -1367,7 +1346,7 @@
     transform: rotate(0);
     animation: fishEye 3.5s linear infinite;
   }
-  .fish-wrapper.right .fish span:nth-child(4) {
+  #hero-288 .fish-wrapper.right .fish span:nth-child(4) {
     animation-delay: 1s;
   }
   @keyframes fishEye {
@@ -1404,22 +1383,22 @@
       top: 14px;
     }
   }
-  .water-lines-wrapper {
+  #hero-288 .water-lines-wrapper {
     position: absolute;
     top: 18px;
     left: 33px;
     z-index: 2;
   }
-  .water-lines-wrapper.right {
+  #hero-288 .water-lines-wrapper.right {
     left: 500px;
     top: 24px;
   }
-  .water-lines {
+  #hero-288 .water-lines {
     position: absolute;
     top: 0;
     left: 0;
   }
-  .water-lines span {
+  #hero-288 .water-lines span {
     position: absolute;
     top: 0;
     left: 0;
@@ -1439,7 +1418,7 @@
       transform: translateX(0) scaleX(1);
     }
   }
-  .water-lines span:nth-child(2) {
+  #hero-288 .water-lines span:nth-child(2) {
     left: 49px;
     width: 17px;
     animation-name: water-lines-2;
@@ -1455,7 +1434,7 @@
       transform: translateX(0) scaleX(1);
     }
   }
-  .water-lines span:nth-child(3) {
+  #hero-288 .water-lines span:nth-child(3) {
     top: 12px;
     left: 14px;
     width: 14px;
@@ -1473,7 +1452,7 @@
       transform: translateX(0) scaleX(1);
     }
   }
-  .water-lines span:nth-child(4) {
+  #hero-288 .water-lines span:nth-child(4) {
     top: 12px;
     left: 47px;
     width: 11px;
@@ -1491,7 +1470,7 @@
       transform: translateX(0) scaleX(1);
     }
   }
-  .water-lines span:nth-child(5) {
+  #hero-288 .water-lines span:nth-child(5) {
     top: 24px;
     left: 32px;
     width: 10px;
@@ -1509,7 +1488,7 @@
       transform: translateX(0) scaleX(1);
     }
   }
-  .water-big-wrapper {
+  #hero-288 .water-big-wrapper {
     position: absolute;
     left: 240px;
     bottom: 0;
@@ -1519,7 +1498,7 @@
     z-index: 6;
     overflow: hidden;
   }
-  .water-big-wrap {
+  #hero-288 .water-big-wrap {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -1529,7 +1508,7 @@
     z-index: 6;
     animation: moveWater 2s linear infinite;
   }
-  .water-big {
+  #hero-288 .water-big {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -1538,13 +1517,13 @@
     display: block;
     z-index: 1;
   }
-  .water-big.snd {
+  #hero-288 .water-big.snd {
     left: 116px;
   }
-  .water-big.trd {
+  #hero-288 .water-big.trd {
     left: 232px;
   }
-  .water-big span {
+  #hero-288 .water-big span {
     position: absolute;
     left: 0;
     top: 20px;
@@ -1554,7 +1533,7 @@
     z-index: 1;
     background-color: var(--backgroundPrimary);
   }
-  .water-big span:nth-child(2) {
+  #hero-288 .water-big span:nth-child(2) {
     left: -2px;
     top: -20px;
     height: 40px;
@@ -1566,7 +1545,7 @@
     border-color: transparent #030308 #030308 transparent;
     transform: rotate(45deg);
   }
-  .water-big span:nth-child(3) {
+  #hero-288 .water-big span:nth-child(3) {
     left: 37px;
     top: -20px;
     height: 40px;
@@ -1578,7 +1557,7 @@
     border-color: transparent #030308 #030308 transparent;
     transform: rotate(45deg);
   }
-  .water-big span:nth-child(4) {
+  #hero-288 .water-big span:nth-child(4) {
     left: 75px;
     top: -20px;
     height: 40px;
@@ -1590,7 +1569,7 @@
     border-color: transparent #030308 #030308 transparent;
     transform: rotate(45deg);
   }
-  .water-big span:nth-child(5) {
+  #hero-288 .water-big span:nth-child(5) {
     left: 8px;
     top: 14px;
     height: 60px;
@@ -1600,7 +1579,7 @@
     border-bottom-left-radius: 53%;
     transform: scale(0.45, 1) rotate(-45deg);
   }
-  .water-big span:nth-child(6) {
+  #hero-288 .water-big span:nth-child(6) {
     left: 46px;
     top: 14px;
     height: 60px;
@@ -1610,7 +1589,7 @@
     border-bottom-left-radius: 53%;
     transform: scale(0.45, 1) rotate(-45deg);
   }
-  .water-big span:nth-child(7) {
+  #hero-288 .water-big span:nth-child(7) {
     left: 84px;
     top: 14px;
     height: 60px;
@@ -1620,7 +1599,7 @@
     border-bottom-left-radius: 53%;
     transform: scale(0.45, 1) rotate(-45deg);
   }
-  .water-big span:nth-child(8) {
+  #hero-288 .water-big span:nth-child(8) {
     left: -30px;
     top: 14px;
     height: 60px;
@@ -1630,56 +1609,56 @@
     border-bottom-left-radius: 53%;
     transform: scale(0.45, 1) rotate(-45deg);
   }
-  .water-big span:nth-child(9) {
+  #hero-288 .water-big span:nth-child(9) {
     left: 5px;
     top: 15px;
     height: 15px;
     width: 10px;
     transform: rotate(-55deg);
   }
-  .water-big span:nth-child(10) {
+  #hero-288 .water-big span:nth-child(10) {
     left: 43px;
     top: 14px;
     height: 15px;
     width: 10px;
     transform: rotate(-55deg);
   }
-  .water-big span:nth-child(11) {
+  #hero-288 .water-big span:nth-child(11) {
     left: 81px;
     top: 14px;
     height: 15px;
     width: 10px;
     transform: rotate(-55deg);
   }
-  .water-big span:nth-child(12) {
+  #hero-288 .water-big span:nth-child(12) {
     left: 23px;
     top: 13px;
     height: 17px;
     width: 10px;
     transform: rotate(55deg);
   }
-  .water-big span:nth-child(13) {
+  #hero-288 .water-big span:nth-child(13) {
     left: 62px;
     top: 14px;
     height: 15px;
     width: 10px;
     transform: rotate(55deg);
   }
-  .water-big span:nth-child(14) {
+  #hero-288 .water-big span:nth-child(14) {
     left: 100px;
     top: 14px;
     height: 15px;
     width: 10px;
     transform: rotate(55deg);
   }
-  .ship-wrapper {
+  #hero-288 .ship-wrapper {
     position: absolute;
     left: 260px;
     bottom: 116px;
     display: block;
     z-index: 4;
   }
-  .ship {
+  #hero-288 .ship {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -1707,7 +1686,7 @@
       transform: translateY(0) rotate(0);
     }
   }
-  .ship span {
+  #hero-288 .ship span {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -1720,7 +1699,7 @@
     background-color: #fff;
     z-index: 1;
   }
-  .ship span:nth-child(2) {
+  #hero-288 .ship span:nth-child(2) {
     left: 30px;
     bottom: 34px;
     width: 3px;
@@ -1729,7 +1708,7 @@
     border-radius: 0;
     background-color: #030308;
   }
-  .ship span:nth-child(3) {
+  #hero-288 .ship span:nth-child(3) {
     left: 21px;
     bottom: 57px;
     width: 0;
@@ -1743,7 +1722,7 @@
     transform: rotate(-16.5deg);
     border-bottom-right-radius: 5px;
   }
-  .ship span:nth-child(4) {
+  #hero-288 .ship span:nth-child(4) {
     left: 21px;
     bottom: 55px;
     width: 0;
@@ -1758,7 +1737,7 @@
     border-bottom-right-radius: 3px;
     z-index: 2;
   }
-  .ship span:nth-child(5) {
+  #hero-288 .ship span:nth-child(5) {
     left: -1px;
     bottom: 60px;
     width: 0;
@@ -1771,7 +1750,7 @@
     border-right: 0 solid transparent;
     border-bottom-left-radius: 5px;
   }
-  .ship span:nth-child(6) {
+  #hero-288 .ship span:nth-child(6) {
     left: 1px;
     bottom: 58px;
     width: 0;
@@ -1786,9 +1765,36 @@
     transform: scale(0.8);
     z-index: 2;
   }
+  #pricing-1103 {
+    padding-top: 0;
+    border-top: 0px dashed #000000;
+    border-bottom: 0px dashed #000000;
+  }
+  #pricing-1103 .cs-content {
+    visibility: visible;
+  }
+  #pricing-1103 .cs-card-group .cs-item {
+    margin-right: 1em;
+  }
+}
+@media only screen and (min-width: 0rem) {
+  #hero-title {
+    color: white !important;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    line-height: 1.2em;
+    font-weight: 1em !important;
+    text-shadow: -1px 2px 0 #000, -2px 2px 0 #000, -3px 3px 0 #000, -4px 4px 0 #000, -5px 5px 0 #000, -6px 6px 0 #000, -7px 7px 0 #000;
+  }
+  #hero-288 {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--backgroundPrimary);
+    min-height: 415px;
+  }
 }
 /*-- -------------------------- -->
-<---         Services           -->
+<---         why us             -->
 <--- -------------------------- -*/
 @media only screen and (min-width: 0rem) {
   #services-1666 {
@@ -1995,9 +2001,7 @@
 @media only screen and (min-width: 64rem) {
   #services-1666 .cs-container {
     max-width: 80rem;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: stretch;
   }
   #services-1666 .cs-content {
     width: 55%;
@@ -2017,15 +2021,15 @@
   }
 }
 /*-- -------------------------- -->
-<---         Services 2         -->
+<---         addition services  -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #services-1644 {
+    border-top: 2px dashed #000000;
     padding: var(--sectionPadding);
     background-color: #fff8ed;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 4px 12px;
-    border-top: 2px dashed #000000;
   }
   #services-1644 .cs-container {
     width: 100%;

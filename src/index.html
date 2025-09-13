@@ -82,12 +82,13 @@ eleventyNavigation:
 
 		<div class="cs-container">
 			<div class="cs-content">
-				<h1 class="cs-title " id="hero-title" contentEditable role='textbox' aria-multiline='true'>Crafted by Hand Powered by Code</h1>
-				<h2 class="cs-name" contentEditable role='textbox' aria-multiline='true'> Affordable Web Design for Local Small Businesses. </h2>
+				<span class="cs-topper hero-topper" contentEditable role='textbox' aria-multiline='true'>Custom Coded | Custom Designed</span>
+				<h1 class="cs-title " id="hero-title" contentEditable role='textbox' aria-multiline='true'>We Do Websites. You Do You.</h1>
+				
 				<p class="cs-text "contentEditable role='textbox' aria-multiline='true'>
-                Skip the Builders and Templates Our Custom-Coded Websites Start at $150/Month with Zero Down Payment
+                We hand code fast, scalable, mobile friendly sites and keep them running without a hitch. Hosting, updates, support all done for you.
             </p>
-				<a href="" class="cs-button-solid">Make An Appointment</a>
+				<a href="" class="cs-button-solid">View Details</a>
 				{# <ul class="cs-stats-group"> </ul> #}
 			</div>
 
@@ -453,28 +454,19 @@ eleventyNavigation:
 
 	</section>
 
+	    {% include 'components/cta.html' %}
 	<!-- ============================================ -->
-	<!--                  Services                    -->
+	<!--                  Services Q&A                -->
 	<!-- ============================================ -->
 
 	<section id="services-1666">
 		<div class="cs-container">
-			<div class="cs-image-group">
-				<picture class="cs-picture">
-					<!--Mobile Image-->
-					<source media="(max-width: 600px)" srcset="./assets/images/UIUX.jpg">
-					<!--Tablet and above Image-->
-					<source media="(min-width: 601px)" srcset="./assets/images/UIUX.jpg">
-					<img loading="lazy" decoding="async" src="./assets/images/UIUX.jpg" alt="UI/UX Sketch" width="605" height="690">
-				</picture>
-				<!--SVG Graphic-->
-				{# <img class="cs-floater" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-swirl.svg" alt="graphic" loading="lazy" decoding="async" height="710" aria-hidden="true" width="690"> #}
-			</div>
+
 			<div class="cs-content">
-				<span class="cs-topper">$185 per Month - 6 Month Minimum Contract</span>
-				<h2 class="cs-title" id='hero-title'>Small Business Talored Monthly Plan</h2>
+				<span class="cs-topper">Whats in it for you?</span>
+				<h2 class="cs-title" id='hero-title'>Comprehensive Website Management. Its Covered.</h2>
 				<p class="cs-text">
-                We specialize in web design and development for local businesses. Trying to provide cost-effective services to everyone. We strive for a combination of quality and low pricing, to attract more customers to your buissness though the means of the web.
+					We build and manage hand coded websites for small NZ businesses. Fast, secure, and Google friendly. No DIY, no stress, just ongoing support and real results.
             </p>
 				<ul class="cs-faq-group">
 					<li class="cs-faq-item active">
@@ -484,7 +476,8 @@ eleventyNavigation:
 								<path d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708m-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708"/>
 							</svg>
 							<span class="cs-button-text">
-                            Web Design & Development
+								Fully Hand-Coded, Zero Page Builders
+                            
                         </span>
 							<span class="cs-indicator" aria-hidden="true"></span>
 						</button>
@@ -499,12 +492,12 @@ eleventyNavigation:
 								<path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
 							</svg>
 							<span class="cs-button-text">
-                            On-Demand Support
+                            Your Developer On Call – We’ve Got Your Back
                         </span>
 							<span class="cs-indicator" aria-hidden="true"></span>
 						</button>
 						<p class="cs-item-p">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente placeat enim molestias quam, illum ullam ipsa repellat, necessitatibus quis cumque voluptatum nesciunt. Quia possimus est in recusandae saepe nostrum.
+                        Direct access to your developer for urgent updates and advice.
                     </p>
 					</li>
 					<li class="cs-faq-item">
@@ -515,12 +508,12 @@ eleventyNavigation:
 								<path d="M5 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
 							</svg>
 							<span class="cs-button-text">
-                            Hosting & Domain Management
+                            Hosting & Domain Management – All Included
                         </span>
 							<span class="cs-indicator" aria-hidden="true"></span>
 						</button>
 						<p class="cs-item-p">
-                        Lorem, ipsum mosmosdolor sit amet consectetur adipisicing elit. Quod sapiente placeat enim molestias quam, illum ullam ipsa repellat, necessitatibus quis cumque voluptatum nesciunt. Quia possimus est in recusandae saepe nostrum.
+                        Worry-free domain renewals and fast, secure hosting included.
                     </p>
 					</li>
 					<li class="cs-faq-item">
@@ -530,12 +523,12 @@ eleventyNavigation:
 								<path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
 							</svg>
 							<span class="cs-button-text">
-                            Unlimited Page Edits
+                            Unlimited Edits, No Extra Fees 
                         </span>
 							<span class="cs-indicator" aria-hidden="true"></span>
 						</button>
 						<p class="cs-item-p">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente placeat enim molestias quam, illum ullam ipsa repellat, necessitatibus quis cumque voluptatum nesciunt. Quia possimus est in recusandae saepe nostrum.
+                        Keep your site content fresh with unlimited monthly updates.
                     </p>
 					</li>
 					<li class="cs-faq-item">
@@ -545,12 +538,12 @@ eleventyNavigation:
 								<path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
 							</svg>
 							<span class="cs-button-text">
-                            Bulit in CMS Admin Panel
+                            Integrated Blog & Content Management
                         </span>
 							<span class="cs-indicator" aria-hidden="true"></span>
 						</button>
 						<p class="cs-item-p">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente placeat enim molestias quam, illum ullam ipsa repellat, necessitatibus quis cumque voluptatum nesciunt. Quia possimus est in recusandae saepe nostrum.
+                        Easily publish updates, projects, and announcements to your dedicated blog, projects, or news page anytime.
                     </p>
 					</li>
 				</ul>
@@ -560,6 +553,8 @@ eleventyNavigation:
 
 	</section>
 
+
+
 	<!-- ============================================ -->
 	<!--                  Services 2                  -->
 	<!-- ============================================ -->
@@ -567,10 +562,10 @@ eleventyNavigation:
 	<section id="services-1644">
 		<div class="cs-container">
 			<div class="cs-content">
-				<span class="cs-topper">Qaulity at a fair price</span>
-				<h2 class="cs-title" id="hero-title">What Else Our Sites Include</h2>
+				<span class="cs-topper">Need something else?</span>
+				<h2 class="cs-title" id="hero-title">Additional Services</h2>
 				<p class="cs-text">
-                Our website is designed to provide users with the great experience while also maximising performance. Here's what else we offer.
+                Our websites are designed your standards while also maximising performance. Here's what else we offer.
             </p>
 			</div>
 			<ul class="cs-card-group">
@@ -583,11 +578,12 @@ eleventyNavigation:
 						</svg>
 					</div>
 					<div class="cs-flex">
-						<h2 class="cs-h2">Optimised Search</h2>
+						<h2 class="cs-h2">SEO & Content Tweaks</h2>
 						<p class="cs-item-text">
-                    We've carefully crafted our content and structure to ensure high visibility in Google search results, making it easier for you to find us when you need us.
+                    We'll carefully craft your content and structure to ensure high visibility in Google search results, making it easier for your customers to find your business.
                     </p>
 					</div>
+					<div class="cs-flex service-cards-link"><a class="a-btn" href="services/seo/">Learn More &#8674;</a></div>
 				</li>
 				<li class="cs-item">
 					<div class="cs-image-group">
@@ -596,11 +592,12 @@ eleventyNavigation:
 						</svg>
 					</div>
 					<div class="cs-flex">
-						<h2 class="cs-h2">Google analytics</h2>
+						<h2 class="cs-h2">Google Business Profile</h2>
 						<p class="cs-item-text">
-                        We use this powerful tool to understand how users interact with our site, allowing us to continuously improve your website performance.
+                        We use this powerful tool to understand how users interact with your site, allowing us to continuously improve your websites performance.
                     </p>
 					</div>
+					<div class="cs-flex service-cards-link"><a class="a-btn" href="services/google-business/">Learn More &#8674;</a></div>
 				</li>
 				<li class="cs-item">
 					<div class="cs-image-group">
@@ -611,11 +608,13 @@ eleventyNavigation:
 
 					</div>
 					<div class="cs-flex">
-						<h2 class="cs-h2">Page speed metrics</h2>
+						<h2 class="cs-h2">Rescuing Broken Sites</h2>
 						<p class="cs-item-text">
-                        We prioritize fast loading times to get you the information you need quickly, reducing frustration and improving overall satisfaction.
+                        Dose your website need rescue? from slow loading times to broken forms and outdated designs, we'll fix what's broken and optimize your site.
                     </p>
+					
 					</div>
+										<div class="cs-flex"><a class="a-btn" href="services/web-rescue/">Learn More &#8674;</a></div>
 				</li>
 				<li class="cs-item">
 					<div class="cs-image-group">
@@ -625,11 +624,13 @@ eleventyNavigation:
 						</svg>
 					</div>
 					<div class="cs-flex">
-						<h2 class="cs-h2">Mobile First Design</h2>
+						<h2 class="cs-h2">Website Redesign and Rebranding</h2>
 						<p class="cs-item-text">
-							Our website is built with mobile devices in mind, ensuring a seamless and intuitive experience whether you're on-the-go or at home.
+							Ready for a fresh start? We'll transform your outdated website into a modern, mobile first design that accurately reflects you and your brand.
                     </p>
+
 					</div>
+					<div class="cs-flex service-cards-link"><a class="a-btn" href="services/redesign-rebranding/">Learn More &#8674;</a></div>
 				</li>
 			</ul>
 		</div>
@@ -778,7 +779,7 @@ eleventyNavigation:
 </section>
                                 
 
-    {% include 'components/cta.html' %}
+
                                 
 
 
