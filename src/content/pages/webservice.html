@@ -1,5 +1,5 @@
 ---
-title: 'Complete Web Package | Sunlit Sites Web Designs'
+title: 'Web Packages | Sunlit Sites Web Designs'
 breadcrumbs: 'Web Packages'
 description: 'Meta description for the page'
 preloadImg: ''
@@ -12,73 +12,64 @@ eleventyNavigation:
 
 {% extends "layouts/base.html" %}
 
-{% block head %}
-    <link rel="stylesheet" href="/assets/css/reviews.css">
-{% endblock %}
+{% block head %}{% endblock %}
 
 {% block body %}
 
+    {% include 'components/banner.html'%}
 
-{% include 'components/banner.html'%}
+    <!-- ============================================ -->
+    <!--                Side By Side reverse          -->
+    <!--                  style  about.css            -->
+    <!-- ============================================ -->
 
-<!-- ============================================ -->
-<!--                Side By Side reverse          -->
-<!--                  style  about.css            -->
-<!-- ============================================ -->
+    <section id="sbs-1095-1112" class="side-reverse">
+        <div class="cs-container">
 
-
-
-<section id="sbs-1095-1112" class="side-reverse">
-    <div class="cs-container">
-
-        <div class="cs-content">
-            <span class="cs-topper">Our Web Packages</span>
-            <h2 class="cs-title" id="hero-title"> Starting At $175 Per Month With $0 Down </h2>
-            <p class="cs-text">
-                Focus on your business, not your website. We handle all the technical jargon so you don't have to.
-            </p>
+            <div class="cs-content">
+                <span class="cs-topper">Complete Web Packages </span>
+                <h2 class="cs-title" id="hero-title">No Strings Attached</h2>
+                <p class="cs-text">
+                Professional websites with everything included no surprises here.
             <ul class="cs-list">
-                <li class="cs-li cs-h3">100% Satisfaction Guaranteed</li>
-                <li class="cs-li" id="content">We'll keep working until you love your website. No deadlines, no excuses, no extra charges just results.</li>
-                <li class="cs-li cs-h3">100% Secure</li>
-                <li class="cs-li" id="content">Our websites can't be hacked because they're built with bulletproof code. No databases to breach, no plugins to exploit</li>
-                <li class="cs-li cs-h3">100% Local Partnership</li>
-                <li class="cs-li" id="content">We're your neighbors, not some overseas agency. We understand Kiwi businesses because we are one. Your success is our community's success.</li>
-                <li class="cs-li cs-h3">100% No Surprises</li>
-                <li class="cs-li" id="content">Fixed monthly pricing with everything included. No setup fees, no hidden costs, no surprise bills. Ever.</li>
-                <li class="cs-li cs-h3">100% You Own Everything </li>
-                <li class="cs-li" id="content">Your domain, your content, your website files you own it all. No hostage situations.</li>
-            </ul>
-        </div>
+                        <li class="cs-li cs-h3">100% Satisfaction Guaranteed</li>
+                        <li class="cs-li" id="content">We'll keep working until you love your website. No extra charges.</li>
+                        <li class="cs-li cs-h3">100% Secure</li>
+                        <li class="cs-li" id="content">Our websites can't be hacked because they're built with bulletproof code. No databases to breach, no plugins to exploit</li>
+                        <li class="cs-li cs-h3">100% Local Partnership</li>
+                        <li class="cs-li" id="content">We're your neighbors, not some overseas agency. We understand Kiwi businesses because we are one. Your success is our community's success.</li>
+                        <li class="cs-li cs-h3">100% No Surprises</li>
+                        <li class="cs-li" id="content">Fixed monthly pricing with everything included. No setup fees, no hidden costs, no surprise bills. Ever.</li>
+                        <li class="cs-li cs-h3">100% You Own Everything </li>
+                        <li class="cs-li" id="content">Your domain, your content, your website files, you own it all. No hostage situations.</li>
+                    </ul>
+                </div>
 
                 <div class="cs-image-group">
-            <!--Top left image-->
-            <picture class="cs-picture">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="../../assets/images/UIUX.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="../../assets/images/UIUX.jpg">
-                <img loading="lazy" decoding="async" src="../../assets/images/UIUX.jpg" alt="UI UX" width="542" height="608">
-            </picture>
-            <!--Eclipses-->
-            <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/eclipses.svg" alt="profile" width="184" height="184" aria-hidden="true">
-            <!--Stripe background-->
-            <img class="cs-stripes" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/stripes-long.svg" alt="stripes" width="522" height="608" aria-hidden="true">
-        </div>
+                    <!--Top left image-->
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="../../assets/images/UIUX.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="../../assets/images/UIUX.jpg">
+                        <img loading="lazy" decoding="async" src="../../assets/images/UIUX.jpg" alt="UI UX" width="542" height="608">
+                    </picture>
+                    <!--Eclipses-->
+                    <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/eclipses.svg" alt="profile" width="184" height="184" aria-hidden="true">
+                    <!--Stripe background-->
+                    <img class="cs-stripes" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/stripes-long.svg" alt="stripes" width="522" height="608" aria-hidden="true">
+                </div>
 
-    </div>
-</section>
+            </div>
+        </section>
 
+        {% include 'components/workflow.html' %}
 
-
-
-
-
-<!-- ============================================ -->
-<!--             Side By Side Reverse             -->
-<!--                  style  about.css            -->
-<!-- ============================================ -->
-<section id="sbsr-1100-1112">
+        <!-- ============================================ -->
+        <!--             Side By Side Reverse             -->
+        <!--                  style  about.css            -->
+        <!-- ============================================ -->
+        {# <section id="sbsr-1100-1112">
     <div class="cs-container">
         <div class="cs-image-group">
             <!--Top left image-->
@@ -125,16 +116,155 @@ eleventyNavigation:
             </ul>
         </div>
     </div>
-</section>
+</section> #}
+
+        <!-- ============================================ -->
+        <!--                  Services Q&A                -->
+        <!-- ============================================ -->
+
+        <section id="services-1666">
+            <div class="cs-container">
+
+                <div class="cs-content">
+                    <span class="cs-topper">we want to hear from you</span>
+                    <h2 class="cs-title" id='hero-title'>Frequently Asked Questions</h2>
+                    <ul class="cs-faq-group">
+                        <li class="cs-faq-item active">
+                            <button class="cs-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-patch-question-fill" viewBox="0 0 16 16">
+                                    <path d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0m1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.7 1.7 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627"/>
+                                </svg>
+                                <span class="cs-button-text">
+								What exactly do I get for my monthly fee?
+                            
+                        </span>
+                                <span class="cs-indicator" aria-hidden="true"></span>
+                            </button>
+                            <p class="cs-item-p">
+                        Complete peace of mind. Your monthly fee covers everything needed to keep your website running smoothly - hosting, security updates, domain renewals, content updates, and direct access to your developer. No hidden costs, no surprise bills, no technical headaches on your end.
+                    </p>
+                        </li>
+                        <li class="cs-faq-item ">
+                            <button class="cs-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-patch-question-fill" viewBox="0 0 16 16">
+                                    <path d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0m1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.7 1.7 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627"/>
+                                </svg>
+                                <span class="cs-button-text">
+                            How is this different from DIY website builders?
+                        </span>
+                                <span class="cs-indicator" aria-hidden="true"></span>
+                            </button>
+                            <p class="cs-item-p">
+                        Speed, performance, and support. Our hand-coded sites load 3x faster than template-based alternatives, rank better on Google, and when something breaks, you have a real person to call - not a help desk ticket system. Plus, no learning curve or hours spent figuring out how to make changes.
+                    </p>
+                        </li>
+                        <li class="cs-faq-item">
+                            <button class="cs-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-patch-question-fill" viewBox="0 0 16 16">
+                                    <path d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0m1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.7 1.7 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627"/>
+                                </svg>
+                                <span class="cs-button-text">
+                            Why hand-coded instead of using WordPress or other platforms?
+                        </span>
+                                <span class="cs-indicator" aria-hidden="true"></span>
+                            </button>
+                            <p class="cs-item-p">
+                        Performance and security. Hand-coded sites have no unnecessary bloat, load lightning-fast, and have fewer security vulnerabilities. Your site runs exactly as intended without fighting plugin conflicts or template limitations.
+                    </p>
+                        </li>
+                        <li class="cs-faq-item">
+                            <button class="cs-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-patch-question-fill" viewBox="0 0 16 16">
+                                    <path d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0m1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.7 1.7 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627"/>
+                                </svg>
+                                <span class="cs-button-text">
+                            Do you handle domain renewals and hosting?
+                        </span>
+                                <span class="cs-indicator" aria-hidden="true"></span>
+                            </button>
+                            <p class="cs-item-p">
+                        Yes, completely hands-off for you. We manage your domain renewals so you never lose your web address, and your site is hosted on fast, secure servers optimized for NZ businesses. One less thing to remember or worry about.
+                    </p>
+                        </li>
+                        <li class="cs-faq-item">
+                            <button class="cs-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-patch-question-fill" viewBox="0 0 16 16">
+                                    <path d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0m1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.7 1.7 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627"/>
+                                </svg>
+                                <span class="cs-button-text">
+                            Will my website work on mobile phones?
+                        </span>
+                                <span class="cs-indicator" aria-hidden="true"></span>
+                            </button>
+                            <p class="cs-item-p">
+Absolutely. Every site we build is mobile-first, meaning we design for smartphones first, then scale up. With 60%+ of web traffic coming from mobile devices, this isn't optional anymore.                    </p>
+                        </li>
+
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-patch-question-fill" viewBox="0 0 16 16">
+                                <path d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0m1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.7 1.7 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627"/>
+                            </svg>
+                            <span class="cs-button-text">
+                            Do you handle domain renewals and hosting?
+                        </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                        Yes, completely hands-off for you. We manage your domain renewals so you never lose your web address, and your site is hosted on fast, secure servers optimized for NZ businesses. One less thing to remember or worry about.
+                    </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-patch-question-fill" viewBox="0 0 16 16">
+                                <path d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0m1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.7 1.7 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627"/>
+                            </svg>
+                            <span class="cs-button-text">
+                            What happens if I need to cancel?
+                        </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            No contracts, no penalties. We work month to month because we're confident in our service. Give us 30 days notice and we'll even help you export your content if you're moving elsewhere.                        
+                    </li>
+
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-patch-question-fill" viewBox="0 0 16 16">
+                                <path d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0m1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.7 1.7 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627"/>
+                            </svg>
+                            <span class="cs-button-text">
+                            What if I need something custom or special?
+                        </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                        Just ask. Need a booking system? Custom contact forms? Integration with your existing tools? We quote separately depending on the add on.
+                    </li>
+
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-patch-question-fill" viewBox="0 0 16 16">
+                                <path d="M5.933.87a2.89 2.89 0 0 1 4.134 0l.622.638.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01zM7.002 11a1 1 0 1 0 2 0 1 1 0 0 0-2 0m1.602-2.027c.04-.534.198-.815.846-1.26.674-.475 1.05-1.09 1.05-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.7 1.7 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745.336 0 .504-.24.554-.627"/>
+                            </svg>
+                            <span class="cs-button-text">
+                            What kind of support response time can I expect?
+                        </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                        I try to respond as fast as possible to all urgent issues (site down, broken functionality). Otherwise expect a reply within 24hrs.
+                    </li>
 
 
-                                
-{% include 'components/cta.html' %}
+                    </ul>
+                    <a href="" class="cs-button-solid">Lets Chat!</a>
+                </div>
+            </div>
 
+        </section>
 
+        {% include 'components/cta.html' %}
 
-
-
-
-
-{% endblock %}
+    {% endblock %}
