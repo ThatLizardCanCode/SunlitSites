@@ -50,7 +50,11 @@ body {
     box-sizing: border-box;
 }
 
-
+.cs-h4{
+                margin-top: 0.75rem;
+                text-transform: uppercase;
+                font: clamp(0.8125rem, 1.4vw, 1rem);
+    }
 .a-btn{
     color: var(--primary);
     text-decoration: none;
@@ -1577,6 +1581,13 @@ body {
             // margin-top: auto;
 
             
+        }
+
+        .cs-side-price {
+                        font-weight: 500;
+            color: #767676c0;
+            font-size: clamp(0.775rem, 1.4vw, 0.9rem);
+            text-transform: uppercase;
         }
 
         .cs-price {

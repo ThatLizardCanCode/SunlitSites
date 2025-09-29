@@ -43,6 +43,11 @@
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
   }
+  .cs-h4 {
+    margin-top: 0.75rem;
+    text-transform: uppercase;
+    font: clamp(0.8125rem, 1.4vw, 1rem);
+  }
   .a-btn {
     color: var(--primary);
     text-decoration: none;
@@ -1270,6 +1275,12 @@
     margin: clamp(1.25rem, 3vw, 1.5rem) 0 0 0;
     padding: clamp(1.25rem, 3vw, 1.5rem) 0 0 0;
   }
+  #pricing-1103 .cs-side-price {
+    font-weight: 500;
+    color: rgba(118, 118, 118, 0.7529411765);
+    font-size: clamp(0.775rem, 1.4vw, 0.9rem);
+    text-transform: uppercase;
+  }
   #pricing-1103 .cs-price {
     /* 31px - 49px */
     font-size: var(--headerFontSize);
@@ -1874,7 +1885,92 @@
     background-color: #fff;
     border-bottom-color: transparent;
   }
-
+  #banner-1106-1112 .building-left {
+    position: absolute;
+    left: 62px;
+    bottom: 3px;
+    display: block;
+    z-index: 9;
+  }
+  #banner-1106-1112 .building-left span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border: 2px solid #030308;
+    background-color: #fff;
+    width: 17px;
+    height: 42px;
+  }
+  #banner-1106-1112 .building-left span:nth-child(2) {
+    left: 20px;
+    width: 30px;
+    height: 64px;
+  }
+  #banner-1106-1112 .building-left span:nth-child(3) {
+    left: 23px;
+    bottom: 62px;
+    width: 24px;
+    height: 9px;
+  }
+  #banner-1106-1112 .building-left span:nth-child(4) {
+    left: 54px;
+    width: 20px;
+    height: 46px;
+  }
+  #banner-1106-1112 .building-left span:nth-child(5) {
+    left: 56px;
+    bottom: 44px;
+    width: 16px;
+    height: 7px;
+  }
+  #banner-1106-1112 .building-left span:nth-child(6) {
+    left: 2px;
+    bottom: 27px;
+    border: none;
+    background-color: #030308;
+    width: 6px;
+    height: 2px;
+  }
+  #banner-1106-1112 .building-left span:nth-child(7) {
+    left: 22px;
+    bottom: 44px;
+    border: none;
+    background-color: #030308;
+    width: 11px;
+    height: 2px;
+  }
+  #banner-1106-1112 .building-left span:nth-child(8) {
+    left: 39px;
+    bottom: 20px;
+    border: none;
+    background-color: #030308;
+    width: 11px;
+    height: 2px;
+  }
+  #banner-1106-1112 .building-left span:nth-child(9) {
+    left: 56px;
+    bottom: 31px;
+    border: none;
+    background-color: #030308;
+    width: 8px;
+    height: 2px;
+  }
+  #banner-1106-1112 .building-left span:nth-child(10) {
+    left: 29px;
+    bottom: 71px;
+    border: none;
+    background-color: #030308;
+    width: 2px;
+    height: 17px;
+  }
+  #banner-1106-1112 .building-left span:nth-child(11) {
+    left: 39px;
+    bottom: 71px;
+    border: none;
+    background-color: #030308;
+    width: 2px;
+    height: 17px;
+  }
   #banner-1106-1112 .building-right {
     position: absolute;
     right: 67px;
@@ -1888,8 +1984,86 @@
     bottom: 0;
     border: 2px solid #030308;
     background-color: #fff;
+    width: 86px;
+    height: 24px;
   }
-
+  #banner-1106-1112 .building-right span:nth-child(2) {
+    right: 18px;
+    bottom: 22px;
+    width: 96px;
+    height: 22px;
+    transform-origin: center bottom;
+    transform: skewX(-20deg);
+  }
+  #banner-1106-1112 .building-right span:nth-child(3) {
+    right: 0;
+    bottom: 0;
+    width: 22px;
+    height: 52px;
+  }
+  #banner-1106-1112 .building-right span:nth-child(4) {
+    right: 2px;
+    bottom: 42px;
+    background-color: #030308;
+    border: none;
+    width: 7px;
+    height: 2px;
+  }
+  #banner-1106-1112 .building-right span:nth-child(5) {
+    right: 13px;
+    bottom: 32px;
+    background-color: #030308;
+    border: none;
+    width: 7px;
+    height: 2px;
+  }
+  #banner-1106-1112 .building-right span:nth-child(6) {
+    right: 10px;
+    bottom: 52px;
+    background-color: #030308;
+    border: none;
+    width: 2px;
+    height: 32px;
+  }
+  #banner-1106-1112 .building-right span:nth-child(7) {
+    right: -4px;
+    bottom: 74px;
+    border: none;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #030308;
+    border-left: 0 solid transparent;
+    border-right: 15px solid transparent;
+    transform: skewY(-15deg);
+    transform-origin: left center;
+    animation: moveFlag 1.5s ease infinite;
+  }
+  #banner-1106-1112 .building-right span:nth-child(8) {
+    right: 2px;
+    bottom: 76px;
+    border: none;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    border-bottom: 5px solid #fff;
+    border-left: 0 solid transparent;
+    border-right: 8px solid transparent;
+    transform: skewY(-15deg);
+    transform-origin: left center;
+    animation: moveFlag 1.5s ease infinite;
+  }
+  @keyframes moveFlag {
+    0% {
+      transform: skewY(-15deg);
+    }
+    50% {
+      transform: skewY(5deg);
+    }
+    100% {
+      transform: skewY(-15deg);
+    }
+  }
   #banner-1106-1112 .building-right span:nth-child(9) {
     right: 31px;
     bottom: 0;
@@ -1929,7 +2103,14 @@
     width: 11px;
     height: 7px;
   }
-
+  #banner-1106-1112 .building-right span:nth-child(13) {
+    right: 46px;
+    bottom: 98px;
+    width: 3px;
+    border: none;
+    background-color: #030308;
+    height: 18px;
+  }
   #banner-1106-1112 .building-right span:nth-child(14) {
     right: 43px;
     bottom: 17px;
