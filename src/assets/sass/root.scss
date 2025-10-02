@@ -620,6 +620,7 @@ body {
 
         .cs-button-solid {
             display: none;
+
         }
 
         &:before {
@@ -1172,7 +1173,7 @@ body {
 @media only screen and (min-width: 0rem) {
     #services-1666 {
         padding: var(--sectionPadding);
-        background-color: var(--backgroundSecondary);
+        
         position: relative;
         overflow: hidden;
         z-index: 1;
