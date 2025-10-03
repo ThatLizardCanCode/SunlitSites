@@ -25,8 +25,8 @@
     --btnDark: #1a1a1a;
     --btnLight: #ffffff;
     --backgroundPrimary: #ffba49;
-    --backgroundSecondary: #ffffff;
-    --backgroundPrimaryLight: #fff8ed;
+    --backgroundSecondary: #eeeeee;
+    --backgroundPrimaryLight: #eee9dd;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
@@ -38,6 +38,7 @@
   body {
     margin: 0;
     padding: 0;
+    background-color: var(--backgroundSecondary);
   }
   *, *:before, *:after {
     /* prevents padding from affecting height and width */
@@ -506,25 +507,6 @@
   #cs-navigation.cs-active:before {
     opacity: 1;
     width: 100%;
-  }
-}
-/* Dark Mode */
-@media only screen and (max-width: 63.9375rem) {
-  body.dark-mode #cs-navigation {
-    background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-logo {
-    /* makes it white */
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #cs-navigation .cs-line {
-    background-color: #fff;
-  }
-  body.dark-mode #cs-navigation .cs-ul-wrapper {
-    background-color: var(--medium);
-  }
-  body.dark-mode #cs-navigation .cs-li-link {
-    color: var(--bodyTextColorWhite);
   }
 }
 /*-- -------------------------- -->
@@ -1980,88 +1962,10 @@
   #banner-1106-1112 .building-right span {
     position: absolute;
     right: 18px;
-    bottom: 0;
     border: 2px solid #030308;
     background-color: #fff;
     width: 86px;
     height: 24px;
-  }
-  #banner-1106-1112 .building-right span:nth-child(2) {
-    right: 18px;
-    bottom: 22px;
-    width: 96px;
-    height: 22px;
-    transform-origin: center bottom;
-    transform: skewX(-20deg);
-  }
-  #banner-1106-1112 .building-right span:nth-child(3) {
-    right: 0;
-    bottom: 0;
-    width: 22px;
-    height: 52px;
-  }
-  #banner-1106-1112 .building-right span:nth-child(4) {
-    right: 2px;
-    bottom: 42px;
-    background-color: #030308;
-    border: none;
-    width: 7px;
-    height: 2px;
-  }
-  #banner-1106-1112 .building-right span:nth-child(5) {
-    right: 13px;
-    bottom: 32px;
-    background-color: #030308;
-    border: none;
-    width: 7px;
-    height: 2px;
-  }
-  #banner-1106-1112 .building-right span:nth-child(6) {
-    right: 10px;
-    bottom: 52px;
-    background-color: #030308;
-    border: none;
-    width: 2px;
-    height: 32px;
-  }
-  #banner-1106-1112 .building-right span:nth-child(7) {
-    right: -4px;
-    bottom: 74px;
-    border: none;
-    background-color: transparent;
-    width: 0;
-    height: 0;
-    border-bottom: 10px solid #030308;
-    border-left: 0 solid transparent;
-    border-right: 15px solid transparent;
-    transform: skewY(-15deg);
-    transform-origin: left center;
-    animation: moveFlag 1.5s ease infinite;
-  }
-  #banner-1106-1112 .building-right span:nth-child(8) {
-    right: 2px;
-    bottom: 76px;
-    border: none;
-    background-color: transparent;
-    width: 0;
-    height: 0;
-    border-bottom: 5px solid #fff;
-    border-left: 0 solid transparent;
-    border-right: 8px solid transparent;
-    transform: skewY(-15deg);
-    transform-origin: left center;
-    animation: moveFlag 1.5s ease infinite;
-  }
-  @keyframes moveFlag {
-    0% {
-      transform: skewY(-15deg);
-    }
-    50% {
-      transform: skewY(5deg);
-    }
-    100% {
-      transform: skewY(-15deg);
-    }
   }
   #banner-1106-1112 .building-right span:nth-child(9) {
     right: 31px;
@@ -2234,7 +2138,7 @@
     top: 0;
     border-radius: 50%;
     border: 2px solid #030308;
-    background-color: #fff;
+    background-color: #fd553c;
     width: 37px;
     height: 37px;
     animation: sunShine 3.5s linear infinite;

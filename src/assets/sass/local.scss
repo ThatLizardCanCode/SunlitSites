@@ -521,6 +521,15 @@
         height: 7px;
     }
 
+                .building-right span:nth-child(13){
+                right: 46px;
+                bottom: 98px;
+                width: 3px;
+                border: none;
+                background-color: #030308;
+                height: 18px;
+            }
+            
     .building-right span:nth-child(14){
         right: 43px;
         bottom: 17px;
@@ -645,7 +654,7 @@
         top: 0;
         border-radius: 50%;
         border: 2px solid #030308;
-        background-color: #fff;
+        background-color: #fd553c;
         width: 37px;
         height: 37px;
         animation: sunShine 3.5s linear infinite;
@@ -2090,7 +2099,7 @@
     #sbs-1099 {
         padding: var(--sectionPadding);
         border-top: 2px dashed #000000;
-        background-color: #fff8ed;
+        background-color: var(--backgroundPrimaryLight);
 
         .cs-container {
             width: 100%;

@@ -478,6 +478,14 @@
     width: 11px;
     height: 7px;
   }
+  #hero-288 .building-right span:nth-child(13) {
+    right: 46px;
+    bottom: 98px;
+    width: 3px;
+    border: none;
+    background-color: #030308;
+    height: 18px;
+  }
   #hero-288 .building-right span:nth-child(14) {
     right: 43px;
     bottom: 17px;
@@ -602,7 +610,7 @@
     top: 0;
     border-radius: 50%;
     border: 2px solid #030308;
-    background-color: #fff;
+    background-color: #fd553c;
     width: 37px;
     height: 37px;
     animation: sunShine 3.5s linear infinite;
@@ -1754,7 +1762,6 @@
     position: relative;
     z-index: 1;
     border-top: 2px dashed #000000;
-
   }
   #blog-2082 .cs-container {
     width: 100%;
@@ -1960,14 +1967,8 @@
   #sbs-1099 {
     padding: var(--sectionPadding);
     border-top: 2px dashed #000000;
-    background-color: #fff8ed;
-}
-
- #sbs-1099 .cs-button-solid{
-      margin: clamp(1.75rem, 3.9vw, 2.5rem) 0 0 0;
-  
-
- }
+    background-color: var(--backgroundPrimaryLight);
+  }
   #sbs-1099 .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */
